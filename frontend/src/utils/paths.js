@@ -11,9 +11,6 @@ export default {
     home: () => {
       return "/onboarding";
     },
-    survey: () => {
-      return "/onboarding/survey";
-    },
     llmPreference: () => {
       return "/onboarding/llm-preference";
     },
@@ -35,21 +32,6 @@ export default {
     createWorkspace: () => {
       return "/onboarding/create-workspace";
     },
-  },
-  github: () => {
-    return "https://github.com/Mintplex-Labs/anything-llm";
-  },
-  discord: () => {
-    return "https://discord.com/invite/6UyHPeGZAC";
-  },
-  docs: () => {
-    return "https://docs.useanything.com";
-  },
-  mailToMintplex: () => {
-    return "mailto:team@mintplexlabs.com";
-  },
-  hosting: () => {
-    return "https://my.mintplexlabs.com/aio-checkout?product=anythingllm";
   },
   workspace: {
     chat: (slug) => {

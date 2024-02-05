@@ -23,7 +23,7 @@ const Telemetry = {
   },
 
   client: function () {
-    if (process.env.DISABLE_TELEMETRY === "true" || this.isDev()) return null;
+    if (true) return null;
     const { PostHog } = require("posthog-node");
     return new PostHog(this.pubkey);
   },

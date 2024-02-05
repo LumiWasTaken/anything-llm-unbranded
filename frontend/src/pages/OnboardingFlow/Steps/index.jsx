@@ -8,7 +8,6 @@ import VectorDatabaseConnection from "./VectorDatabaseConnection";
 import CustomLogo from "./CustomLogo";
 import UserSetup from "./UserSetup";
 import DataHandling from "./DataHandling";
-import Survey from "./Survey";
 import CreateWorkspace from "./CreateWorkspace";
 
 const OnboardingSteps = {
@@ -19,7 +18,6 @@ const OnboardingSteps = {
   "custom-logo": CustomLogo,
   "user-setup": UserSetup,
   "data-handling": DataHandling,
-  survey: Survey,
   "create-workspace": CreateWorkspace,
 };
 

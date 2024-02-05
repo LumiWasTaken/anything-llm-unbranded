@@ -104,12 +104,6 @@ function UserButton() {
                 Account
               </button>
             )}
-            <a
-              href={paths.mailToMintplex()}
-              className="text-white hover:bg-slate-200/20 w-full text-left px-4 py-1.5 rounded-md"
-            >
-              Support
-            </a>
             <button
               onClick={() => {
                 window.localStorage.removeItem(AUTH_USER);

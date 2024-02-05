@@ -51,69 +51,10 @@ export default function DefaultChatContainer() {
             <span
               className={`whitespace-pre-line text-white font-normal text-sm md:text-sm flex flex-col gap-y-1 mt-2`}
             >
-              Welcome to AnythingLLM, AnythingLLM is an open-source AI tool by
-              Mintplex Labs that turns anything into a trained chatbot you can
-              query and chat with. AnythingLLM is a BYOK (bring-your-own-keys)
-              software so there is no subscription, fee, or charges for this
-              software outside of the services you want to use with it.
+              Welcome to AnythingLLM, the TL;DR is: This is an open-source AI tool.
+              It's supposed to make your life easier by typing stuff in here and the computer
+              goes 'beep boop' on it's own.
             </span>
-          </div>
-        </div>
-      </div>
-    </React.Fragment>,
-
-    <React.Fragment>
-      <div
-        className={`flex justify-center items-end w-full ${AI_BACKGROUND_COLOR}`}
-      >
-        <div
-          className={`pb-4 pt-2 px-4 w-full flex gap-x-5 md:max-w-[800px] flex-col`}
-        >
-          <div className="flex gap-x-5">
-            <Jazzicon size={36} user={{ uid: "system" }} role={"assistant"} />
-
-            <span
-              className={`whitespace-pre-line text-white font-normal text-sm md:text-sm flex flex-col gap-y-1 mt-2`}
-            >
-              AnythingLLM is the easiest way to put powerful AI products like
-              OpenAi, GPT-4, LangChain, PineconeDB, ChromaDB, and other services
-              together in a neat package with no fuss to increase your
-              productivity by 100x.
-            </span>
-          </div>
-        </div>
-      </div>
-    </React.Fragment>,
-
-    <React.Fragment>
-      <div
-        className={`flex justify-center items-end w-full ${AI_BACKGROUND_COLOR}`}
-      >
-        <div
-          className={`pt-2 pb-6 px-4 w-full flex gap-x-5 md:max-w-[800px] flex-col`}
-        >
-          <div className="flex gap-x-5">
-            <Jazzicon size={36} user={{ uid: "system" }} role={"assistant"} />
-            <div>
-              <span
-                className={`whitespace-pre-line text-white font-normal text-sm md:text-sm flex flex-col gap-y-1 mt-2`}
-              >
-                AnythingLLM can run totally locally on your machine with little
-                overhead you wont even notice it's there! No GPU needed. Cloud
-                and on-premises installation is available as well.
-                <br />
-                The AI tooling ecosystem gets more powerful everyday.
-                AnythingLLM makes it easy to use.
-              </span>
-              <a
-                href={paths.github()}
-                target="_blank"
-                className="mt-5 w-fit transition-all duration-300 border border-slate-200 px-4 py-2 rounded-lg text-white text-sm items-center flex gap-x-2 hover:bg-slate-200 hover:text-slate-800 focus:ring-gray-800"
-              >
-                <GitMerge className="h-4 w-4" />
-                <p>Create an issue on Github</p>
-              </a>
-            </div>
           </div>
         </div>
       </div>
@@ -136,7 +77,7 @@ export default function DefaultChatContainer() {
             <span
               className={`whitespace-pre-line text-white font-normal text-sm md:text-sm flex flex-col gap-y-1 mt-2`}
             >
-              How do I get started?!
+              What can i do here?
             </span>
           </div>
         </div>
@@ -156,10 +97,10 @@ export default function DefaultChatContainer() {
               <span
                 className={`whitespace-pre-line text-white font-normal text-sm md:text-sm flex flex-col gap-y-1 mt-2`}
               >
-                It's simple. All collections are organized into buckets we call{" "}
-                "Workspaces". Workspaces are buckets of files, documents,
+                You can create different areas which we call{" "}
+                "Workspaces". Workspaces are container for files, documents,
                 images, PDFs, and other files which will be transformed into
-                something LLM's can understand and use in conversation.
+                something the AI's can understand and use in conversation.
                 <br />
                 <br />
                 You can add and remove files at anytime.
@@ -197,8 +138,7 @@ export default function DefaultChatContainer() {
             <span
               className={`whitespace-pre-line text-white font-normal text-sm md:text-sm flex flex-col gap-y-1 mt-2`}
             >
-              Is this like an AI dropbox or something? What about chatting? It
-              is a chatbot isn't it?
+              What about privacy? Is my Data sent to OpenAI?
             </span>
           </div>
         </div>
@@ -218,25 +158,20 @@ export default function DefaultChatContainer() {
             <span
               className={`whitespace-pre-line text-white font-normal text-sm md:text-sm flex flex-col gap-y-1 mt-2`}
             >
-              AnythingLLM is more than a smarter Dropbox.
+              It highly depends on how your Admin set this up for you.
               <br />
               <br />
-              AnythingLLM offers two ways of talking with your data:
+              There are two ways how it could have been set up:
               <br />
               <br />
-              <i>Query:</i> Your chats will return data or inferences found with
-              the documents in your workspace it has access to. Adding more
-              documents to the Workspace make it smarter!
+              <b>External Services:</b> Your inputs will be sent to OpenAI or
+              other services that host the AI to process your request. Your Admin
+              will cover the bill and OpenAI receives the data!
               <br />
               <br />
-              <i>Conversational:</i> Your documents + your on-going chat history
-              both contribute to the LLM knowledge at the same time. Great for
-              appending real-time text-based info or corrections and
-              misunderstandings the LLM might have.
-              <br />
-              <br />
-              You can toggle between either mode{" "}
-              <i>in the middle of chatting!</i>
+              <b>Locally Hosted:</b> Your inputs will be sent to a private server
+              which your Admin has set up for this service. This means that no company will
+              receive your input or potentially use it for their own usecases.
             </span>
           </div>
         </div>
@@ -260,7 +195,7 @@ export default function DefaultChatContainer() {
             <span
               className={`whitespace-pre-line text-white font-normal text-sm md:text-sm flex flex-col gap-y-1 mt-2`}
             >
-              Wow, this sounds amazing, let me try it out already!
+              What is the Query and Conversation toggle?
             </span>
           </div>
         </div>
@@ -268,42 +203,38 @@ export default function DefaultChatContainer() {
     </React.Fragment>,
 
     <React.Fragment>
+    <div
+      className={`flex justify-center items-end w-full ${AI_BACKGROUND_COLOR}`}
+    >
       <div
-        className={`flex justify-center items-end w-full ${AI_BACKGROUND_COLOR}`}
+        className={`py-6 px-4 w-full flex gap-x-5 md:max-w-[800px] flex-col`}
       >
-        <div
-          className={`py-6 px-4 w-full flex gap-x-5 md:max-w-[800px] flex-col`}
-        >
-          <div className="flex gap-x-5">
-            <Jazzicon size={36} user={{ uid: "system" }} role={"assistant"} />
-            <div>
-              <span
-                className={`whitespace-pre-line text-white font-normal text-sm md:text-sm flex flex-col gap-y-1 mt-2`}
-              >
-                Have Fun!
-              </span>
+        <div className="flex gap-x-5">
+          <Jazzicon size={36} user={{ uid: "system" }} role={"assistant"} />
 
-              <div className="flex flex-col md:flex-row items-start md:items-center gap-1 md:gap-4">
-                <a
-                  href={paths.github()}
-                  target="_blank"
-                  className="mt-5 w-fit transition-all duration-300 border border-slate-200 px-4 py-2 rounded-lg text-white text-sm items-center flex gap-x-2 hover:bg-slate-200 hover:text-slate-800 focus:ring-gray-800"
-                >
-                  <GithubLogo className="h-4 w-4" />
-                  <p>Star on GitHub</p>
-                </a>
-                <a
-                  href={paths.mailToMintplex()}
-                  className="mt-5 w-fit transition-all duration-300 border border-slate-200 px-4 py-2 rounded-lg text-white text-sm items-center flex gap-x-2 hover:bg-slate-200 hover:text-slate-800 focus:ring-gray-800"
-                >
-                  <EnvelopeSimple className="h-4 w-4" />
-                  <p>Contact Mintplex Labs</p>
-                </a>
-              </div>
-            </div>
-          </div>
+          <span
+            className={`whitespace-pre-line text-white font-normal text-sm md:text-sm flex flex-col gap-y-1 mt-2`}
+          >
+            AnythingLLM offers two ways of talking with your data:
+            <br />
+            <br />
+            <i>Query:</i> Your chats will return data or inferences found with
+            the documents in your workspace it has access to. Adding more
+            documents to the Workspace make it smarter!
+            <br />
+            <br />
+            <i>Conversational:</i> Your documents + your on-going chat history
+            both contribute to the LLM knowledge at the same time. Great for
+            appending real-time text-based info or corrections and
+            misunderstandings the LLM might have.
+            <br />
+            <br />
+            You can toggle between either mode{" "}
+            <i>in the middle of chatting!</i>
+          </span>
         </div>
       </div>
+    </div>
     </React.Fragment>,
   ];
 

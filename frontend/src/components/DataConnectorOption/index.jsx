@@ -30,7 +30,7 @@ export default function DataConnectorOption({ slug }) {
 export const DATA_CONNECTORS = {
   github: {
     name: "GitHub Repo",
-    path: paths.settings.dataConnectors.github(),
+    path: "https://github.com/LumiWasTaken/anything-llm-unbranded",
     image: ConnectorImages.github,
     description:
       "Import an entire public or private Github repository in a single click.",
