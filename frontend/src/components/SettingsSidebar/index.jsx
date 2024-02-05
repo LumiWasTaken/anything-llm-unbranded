@@ -343,7 +343,17 @@ export function SidebarMobileHeader() {
                     allowedRole={["admin", "manager"]}
                   />
                 </div>
-              </div>
+              </div><p align="center">
+    <b>Unbranded Version from Lumi</b> <br />
+    Features include: <br />
+    - Telemetry Disabled by Default <br />
+    - Survey Removed (more removed telemetry) <br />
+    - Github Links Removed <br />
+    - Misleading "Support" Button Removed (it just opens an email... wow)
+
+  The rest of this Readme has been left unchanged.
+
+</p>
             </div>
           </div>
         </div>
